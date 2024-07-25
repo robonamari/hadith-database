@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+
+<head>
+ <meta charset="UTF-8">
+ <title>robonamari</title>
+ <link rel="icon" href="https://robonamari.ir/wp-content/uploads/favicon.png" type="image/gif">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="title" content="Hadith - robonamari">
+ <meta name="description" content="احادیث چهارده معصوم علیهم السلام برای استفاده در سایت ها">
+ <meta name="keywords" content="github">
+ <meta name="theme-color" content="#FF0000">
+ <meta property="og:title" content="Hadith - robonamari">
+ <meta property="og:description" content="احادیث چهارده معصوم علیهم السلام برای استفاده در سایت ها">
+ <meta property="og:image" content="Hadith%20background%201.jpg">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="{{ request.url_root }}">
+ <meta property="og:site_name" content="robonamari">
+ <meta property="og:locale" content="fa_IR">
+ <style>
+  @font-face {
+  font-family: 'Shabnam';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+  url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff2') format('woff2'),
+  url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff') format('woff'),
+  url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.ttf') format('truetype');
+  }
+  @font-face {
+  font-family: 'Shabnam';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+  url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.woff2') format('woff2'),
+  url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.woff') format('woff'),
+  url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.ttf') format('truetype');
+  }
+  #hadith-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .hadith-text {
+  height: calc(72vh - 20px);
+  width: 140px;
+  font-size: 12px;
+  direction: rtl;
+  text-align: justify;
+  color: #ffffff;
+  line-height: 20px;
+  }
+  .hadith-source {
+  align-self: flex-end;
+  width: 140px;
+  height: 20px;
+  font-size: 11px;
+  direction: rtl;
+  text-align: left;
+  color: #ffffff;
+  }
+  body {
+  background: url(Hadith%20background%201.jpg) no-repeat top center;
+  font-family: "Shabnam";
+  padding: 0;
+  margin: 28vh 5px 0 5px;
+  background-size: cover;
+  }
+ </style>
+</head>
+
+<body>
+ <div align="center"> <a target="_blank" id="hadith-container">
+   <div id="hadith"></div>
+  </a> </div>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var hadiths = [
+  {
+  text: "دعایی که بیشتر امید اجابت آن می‌رود و زودتر به اجابت می‌رسد، دعا برای برادر دینی است در پشت سر او.",
+  name: "اصول کافی، ج ۱، ص ۵۲"
+  },
+  {
+  text: "تکس2",
+  name: "2"
+  }
+  ];
+  
+  function getRandomHadith() {
+  var randomIndex = Math.floor(Math.random() * hadiths.length);
+  return hadiths[randomIndex];
+  }
+  
+  function displayRandomHadith() {
+  var randomHadith = getRandomHadith();
+  var hadithText = randomHadith.text;
+  var hadithName = randomHadith.name;
+  var hadithContainer = document.getElementById("hadith");
+  var hadithHTML = "<div class='hadith-text'>" + hadithText + "</div><div class='hadith-source'>" + hadithName + "</div>";
+  hadithContainer.innerHTML = hadithHTML;
+  }
+  
+  displayRandomHadith();
+  });
+ </script>
+</body>
+
+</html>
