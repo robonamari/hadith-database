@@ -2,7 +2,7 @@
  احادیث چهارده معصوم علیهم السلام برای استفاده در سایت ها
 ```
 <iframe
-    src="https://hadith.robonamari.ir"
+    src="https://hadith.robonamari.com"
     width="150"
     height="calc(72vh - 5px)"
     frameborder="0"
