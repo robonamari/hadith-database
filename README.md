@@ -1,13 +1,13 @@
-# Hadith
- احادیث چهارده معصوم علیهم السلام برای استفاده در سایت ها
-```
-<iframe
-    src="https://hadith.robonamari.com"
-    width="150"
-    height="calc(72vh - 5px)"
-    frameborder="0"
-    scrolling="no"
-    sandbox="allow-same-origin allow-scripts"
-    style="border-radius: 5px; border: 2px solid #254e69; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-</iframe>
-```
+<div align="center">
+
+[**🇮🇷 فارسی**](.github/README/fa.md)
+</div>
+
+<p align="center">
+    <img src="https://img.shields.io/github/languages/code-size/robonamari/Hadith?style=flat" alt="Code Size">
+    <img src="https://tokei.rs/b1/github/robonamari/Hadith?style=flat" alt="Total lines">
+    <img src="https://img.shields.io/badge/all%20languages-all%20Versions-blue" alt="All Versions">
+    <img src="https://img.shields.io/github/license/robonamari/Hadith" alt="GitHub license">
+</p>
+
+---
