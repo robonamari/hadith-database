@@ -21,3 +21,18 @@
 | عکس |  ویدیو |  متن |   گیف |     کل |
 | ------ | ------ | ---- | ------ | ---- |
 | :x:    | :x:    | 9    | :x:    | 9    |
+
+## کمک
+نمونه ای برای دریافت لینک ها به زبان پایتون:
+```python
+import random
+
+import requests  # pip install requests==2.32.3
+
+request = random.choice(
+    requests.get("https://Hadith.robonamari.com/database.json").json()["texts"]
+)
+
+print(request["text"])
+print(request["name"])
+```
