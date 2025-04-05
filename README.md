@@ -17,3 +17,7 @@ This project contains a collection of Hadith presented in a JSON file. This coll
 ## Features
 - Fetching content from an online JSON database.
 - Only contains short links for quick access.
+
+| Picture | Video  | Text | Gif    | total  |
+| ------- | ------ | ---- | ------ | ------ |
+| :x:     | :x:    | 9    | :x:    | 9      |
