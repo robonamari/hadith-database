@@ -13,3 +13,7 @@
 ---
 
 This project contains a collection of Hadith presented in a JSON file. This collection can be utilized in various applications and services to display content to users.
+
+## Features
+- Fetching content from an online JSON database.
+- Only contains short links for quick access.
