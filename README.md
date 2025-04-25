@@ -22,7 +22,7 @@ This project contains a collection of Hadith presented in a JSON file. This coll
 
 | Picture | Video | Text | Gif | total |
 | :-----: | :---: | :--: | :-: | :---: |
-| :x: | :x: | 17 | :x: | 17 |
+| :x: | :x: | 18 | :x: | 18 |
 
 ## Help
 
