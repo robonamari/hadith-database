@@ -22,21 +22,8 @@ This project contains a collection of Hadith presented in a JSON file. This coll
 
 | Picture | Video | Text | Gif | total |
 | :-----: | :---: | :--: | :-: | :---: |
-| :x: | :x: | 18 | :x: | 18 |
+|   :x:   |  :x:  |  18  | :x: |  18   |
 
 ## Help
 
-An exmaple to gather links with python:
-
-```python
-import random
-
-import requests  # pip install requests==2.32.3
-
-request = random.choice(
-    requests.get("https://Hadith.robonamari.com/database.json").json()["texts"]
-)
-
-print(request["text"])
-print(request["name"])
-```
+Example scripts for gathering links can be found in the examples/ directory.
